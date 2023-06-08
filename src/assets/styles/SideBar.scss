@@ -1,0 +1,113 @@
+.side-bar {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #2c2c2c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            width: 250px;
+        }
+    }
+
+    &__fun-words {
+        font-size: 20px;
+        color: #2c2c2c;
+    }
+
+    &__subscribe {
+        color: #999999;
+    }
+
+    .contacts {
+        margin-top: 20px;
+        color: #1c91ed;
+    }
+
+    &__range {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 160px;
+        width: 100%;
+
+        &-mail {
+            text-align: center;
+            color: #2c2c2c;
+            font-size: 20px;
+        }
+
+        &-fun {
+            color: #b9b9b9;
+            opacity: .6;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        &-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .procent {
+                color: #f2a723;
+                font-size: 24px;
+                padding-left: 10px;
+            }
+
+            .progress-box {
+                font-size: 0.75rem;
+                line-height: 1rem;
+                text-align: center;
+                background-color: #2c2c2c;
+                border-radius: 0.25rem;
+                overflow: hidden;
+                width: 600px;
+                height: 18px;
+                max-width: 42%;
+                border-radius: 10px;
+
+                .progress-bar-animated {
+                    animation: progress-bar-stripes 1s linear infinite;
+                }
+
+                .progress-bar-striped {
+                    background-image: linear-gradient(45deg,
+                            rgba(255, 255, 255, 0.15) 25%,
+                            transparent 25%,
+                            transparent 50%,
+                            rgba(255, 255, 255, 0.15) 50%,
+                            rgba(255, 255, 255, 0.15) 75%,
+                            transparent 75%,
+                            transparent);
+                    background-size: 1rem 1rem;
+                }
+
+                .progress-bar {
+                    transition: width 0.6s ease;
+                    color: black;
+                    background-color: #007bff;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 2.5rem;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &__subscribe {
+        text-align: center;
+    }
+
+    &__policy {}
+}
